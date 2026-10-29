@@ -41,7 +41,7 @@ export default function AppleLogin(props: any){
         const { data, error } = await client.auth.signInWithOAuth({
             provider: "apple",
             options: {
-                redirectTo: `https://vertciti-portal.vercel.app/apple-login/${props.client}`
+                redirectTo: `https://app.verciti.com/apple-login/${props.client}`
             }
         });
 
