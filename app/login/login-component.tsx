@@ -40,7 +40,7 @@ export default function Login(props: any){
         const { data, error } = await supabaseMain.auth.signInWithOAuth({
             provider: 'google',
             options: {
-                redirectTo: 'https://vertciti-portal.vercel.app/google-login'
+                redirectTo: 'https://app.verciti.com/google-login'
             }
         });
         if(error){
